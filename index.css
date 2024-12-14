@@ -1,0 +1,120 @@
+
+*{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+html,body{
+    width: 100%;
+    scrollbar-width: none;
+}
+
+
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    background-color: #00000033;
+    width: 100%;
+}
+
+
+nav ul{
+    align-items: center;
+
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+
+    list-style: none;
+}
+
+nav ul a{
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+nav ul a :hover{
+    color: rgb(220, 220, 220) !important;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+
+nav ul a li{
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    background: radial-gradient(ellipse at center, #1e2249, #000000);
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.presentacion{
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+#pfp-Lucas{
+    margin-top: 12px;
+    width: 300px;
+    border-radius: 50%;
+    aspect-ratio: 1; /* Se ajusta al mismo valor que el width */
+    object-fit: cover;
+}
+
+h1{
+   font-size: 2.5em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+
+
+footer{
+    height: 5vh;
+    background-color: #000000;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
