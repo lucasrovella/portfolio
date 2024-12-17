@@ -12,48 +12,156 @@
 
     <nav>
         <ul>
-            <a>
+            <a href="">
                 <li>
                     Acerca de mi
                 </li>
             </a>
 
-            <a>
+            <a href="#proyectos">
                 <li>
                     Proyectos
                 </li>
             </a>
                 
-            <a>
+            <a href="#habilidades">
                 <li>
                     Habilidades
                 </li>
             </a>
-            <a>
+
+            <a href="#contactos">
                 <li>
                     Contacto
                 </li>
             </a>
+
+            <a>
+                <li>
+                    CV
+                </li>
+            </a>
+
         </ul>
     </nav>
 
 
     <main>
-        <div class="presentacion">
-        
-            <h1>
-                Hola soy Lucas Adrian Rovella
-            </h1>
-            <img src="./imgs/WhatsApp Image 2024-09-04 at 16.06.07.jpeg" alt="pfp-Lucas" name="pfp-Lucas" id="pfp-Lucas" >
+        <section  name="presentacion">
+                <h1>
+                    Hola soy Lucas Adrian Rovella
+                </h1>
+                <img src="./imgs/WhatsApp Image 2024-09-04 at 16.06.07.jpeg" alt="pfp-Lucas" name="pfp-Lucas" id="pfp-Lucas" >
 
-            <h2>
-                Desarrollador Fullstack 
-            </h2>
+                <h2>
+                    Desarrollador Fullstack 
+                </h2>
+                
+
+        </section>
+
+
+
+        <section name="proyectos" id="proyectos">
+            <h2>Proyectos</h2>
+
+        </section>
+
+
+        <section name="habilidades" id="habilidades">
+            <h2>Tecnologías y herramientas</h2>
+
+            <p>
+                Esto son los distintos lenguajes y herramientas que 
+                utilizo a la hora de programar.
+            </p>
+
+
+
+            <ul id="div-herramientas" name="div-herramientas">
+                
+                <li name="caja-html" class="cada-herramienta">
+                <img  name="html" class="herramientas" src="./assets/html.svg" >
+                    <span>HTML5</span> 
+                </li>
+
+                <li name="caja-css" class="cada-herramienta">
+                    <img name="css" class="herramientas" src="./assets/css3.svg" >
+                    <span>CSS3</span> 
+                </li>
+
+                <li name="caja-javascript" class="cada-herramienta">
+                    <img name="javascript" class="herramientas" src="./assets/javascript.svg" >
+                    <span>JavaScript</span> 
+                </li>
+
+                <li name="caja-php" class="cada-herramienta">
+                    <img name="php" class="herramientas" src="./assets/php.svg" >
+                    <span>PHP</span> 
+                </li>
+                
+                <li name="caja-mysql" class="cada-herramienta">
+                    <img name="mysql" class="herramientas" src="./assets/mysql.svg" >
+                    <span>MySQL</span> 
+                </li>
+                
+                <li name="caja-cplusplus" class="cada-herramienta">
+                    <img name="cplusplus" class="herramientas" src="./assets/cplusplus.svg" >
+                    <span>C++</span> 
+                </li>
+
+                <li name="caja-csharp" class="cada-herramienta">
+                    <img name="csharp" class="herramientas" src="./assets/csharp.svg" >
+                    <span>C#</span> 
+                </li>
+
+                <li name="caja-vscode" class="cada-herramienta">
+                    <img name="vscode" class="herramientas" src="./assets/visualstudio.svg" >
+                    <span>Visual Studio</span> 
+                </li>
+
+                
+                <li name="caja-react" class="cada-herramienta">
+                    <img name="react" class="herramientas" src="./assets/react.svg" >
+                    <span>React</span> 
+                </li>
+
+                <li name="caja-nodejs" class="cada-herramienta">
+                    <img name="nodejs" class="herramientas" src="./assets/nodejs.svg" >
+                    <span>Nodejs</span> 
+                </li>
+            </ul>
             
-        </div>
+        </section>
 
-        
 
+
+
+
+
+
+
+
+
+        <section name="contacto" id="contacto">
+            <h2> Contacto</h2>
+            
+            <form id="form-contacto" name="form-contacto">
+                
+                <div id="nombre-correo">
+                    <input id="input-nombre" name="input-nombre"  placeholder="Nombre"> 
+                    <input id="input-email" name="input-email"  placeholder="Correo electrónico"> 
+                </div>
+
+
+                <input id="input-consulta" name="input-consulta" placeholder="Asunto">
+
+                <textarea placeholder="Escribi tu mensaje..." id="input-texto" name="input-texto" autocomplete="off" spellcheck="false" ></textarea>
+
+                <button type="submit" id="enviar" name="enviar" >Enviar</button>
+
+            </form>
+        </section>
 
 
 
