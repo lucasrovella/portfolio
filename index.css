@@ -29,10 +29,12 @@ body{
 nav{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: #00000033;
     width: 100%;
+
+    z-index: 3;
 }
 
 
@@ -131,6 +133,54 @@ textarea{
     max-height: 20vh;
 }
 
+
+#presentacion{
+    /* https://e1.pxfuel.com/desktop-wallpaper/794/203/desktop-wallpaper-programming-18-programming.jpg */
+
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapers.com/images/hd/1920x1080-hd-coding-6b7em4l2ptkptmn3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    z-index: 0;
+}
+
+
+#links-redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 32px;
+}
+
+.redes{
+    margin-top: 14px;
+    background-color: white;
+    width: 40px;
+}
+
+
+#github-lucas{
+    border-radius: 50%;
+}
+
+#linkedin-lucas{
+    border-radius: 10%;
+}
+
+#wpp-lucas{
+    border-radius: 50%;
+}
 
 #div-herramientas{
     width: 100%;
