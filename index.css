@@ -81,12 +81,16 @@ nav ul a li{
 main{
     display: flex;
     /* background: radial-gradient(ellipse at center, #1e2249, #000000);  */
-    background: #7c9eff;
     /* background: #1e2249; */
     flex-direction: column;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('./imgs/nube1.png'), #7c9eff;
+    background-position: -250px;
+
 
     width: 100%;
     min-height: 100vh;
+    z-index: 1;
 }
 
 /* @keyframes example { */
@@ -170,7 +174,7 @@ h3{
     justify-content: center;
     text-align: center;
 
-    z-index: 0;
+    z-index: 2;
 }
 
 
@@ -217,11 +221,11 @@ h3{
 }
 
 #algo1{
-    background: linear-gradient(#fafafa , #7c9eff);
+    background: none;
 }
 
 #algo2{
-    background: linear-gradient(#7c9eff, #fafafa );
+    background: none;
 }
 
 /* ACERCA DE MI  */
@@ -230,6 +234,22 @@ h3{
     display: flex;
     width: 200px;
 }
+
+.imagenes-fondo{
+    width: 200px;
+    aspect-ratio: 1;
+
+    z-index: 0;
+}
+
+#div-pajaros{
+    display: block;
+    position: absolute;
+    right: 0;
+
+    opacity: 0.7;
+}
+
 
 .about-me{
     width: 100%;
@@ -284,7 +304,7 @@ h3{
     width: 100%;
 }
 
-img{
+.imagen-redes{
     width: 40px;
 }
 
@@ -458,7 +478,7 @@ footer{
     flex-direction: column;
     flex-wrap: wrap;
     height: 10vh;
-    background-color: #fafafa;
+    background: none;
     justify-content: center;
     align-items: center;
     text-align: center;
