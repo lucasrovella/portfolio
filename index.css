@@ -2,7 +2,7 @@
 *{
     font-weight: 500;
     font-size: 18px;
-    color: white;
+    color: #fafafa;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     padding: 0;
@@ -25,6 +25,7 @@ body{
     justify-content: center;
 }
 
+/* NAVEGADOR */
 
 nav{
     display: flex;
@@ -79,14 +80,34 @@ nav ul a li{
 
 main{
     display: flex;
-    background: radial-gradient(ellipse at center, #1e2249, #000000);
+    /* background: radial-gradient(ellipse at center, #1e2249, #000000);  */
+    background: #7c9eff;
+    /* background: #1e2249; */
     flex-direction: column;
 
     width: 100%;
     min-height: 100vh;
 }
 
+/* @keyframes example { */
+    /* from {background-color: #000000;} */
+    /* to {background-color: #1e224F;} */
+  /* } */
+
+/* 
+    #1e2249
+    rgba(8,8,8,255)
+    #080808
+*/
+
+
 section{
+    /* animation-fill-mode: both; */
+    /* animation-direction: alternate; */
+    /* animation-name: example; */
+    /* animation-duration: 4s; */
+    /* animation-iteration-count: infinite; */
+    
     align-items: center;
     justify-content: center;
 
@@ -118,24 +139,32 @@ h1{
 
 h2{
     font-size: 2em;
-    /* font-family: Jost,sans-serif; */
-    /* font-weight: 300; */
 }
 
 h3{
     font-size: 1.5em;
 }
 
+
+/* INICIO / PRESENTACION */
+
 #presentacion{
     /* https://e1.pxfuel.com/desktop-wallpaper/794/203/desktop-wallpaper-programming-18-programming.jpg */
-
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapers.com/images/hd/1920x1080-hd-coding-6b7em4l2ptkptmn3.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/student-8732859_1920.png");
+    border: none;
+    /* 
+    https://img.freepik.com/fotos-premium/escritorio-cuero-oscuro-moderno-vista-superior-fondo-negro-teclado-lugar-maqueta_67155-16371.jpg
+    
+    */
+    
+    
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     
     align-items: center;
     justify-content: center;
@@ -156,7 +185,7 @@ h3{
 
 .redes{
     margin-top: 14px;
-    background-color: white;
+    background-color: #fafafa;
     width: 40px;
 }
 
@@ -170,16 +199,48 @@ h3{
 }
 
 #wpp-lucas{
-    border-radius: 50%;
+    border-radius: 45%;
+}
+
+#github-lucas:hover, #linkedin-lucas:hover, #wpp-lucas:hover{
+    transition: 0.3s;
+    background-color: #7c9eff;
+}
+
+
+/* ALGO */
+
+#algo1, #algo2{
+    margin: auto;
+    width: 100%;
+    height: 10vh;
+}
+
+#algo1{
+    background: linear-gradient(#fafafa , #7c9eff);
+}
+
+#algo2{
+    background: linear-gradient(#7c9eff, #fafafa );
+}
+
+/* ACERCA DE MI  */
+
+#nube1, #nube2, #nube3{
+    display: flex;
+    width: 200px;
 }
 
 .about-me{
     width: 100%;
+    max-width: 1100px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0;
+
 }
 
 #pfp-about-me{
@@ -188,16 +249,88 @@ h3{
     display: flex;
     align-items: left;
     justify-content: center;
+    text-align: center;
+    padding: 10px;
+    max-width: 400px;
 }
 
 #texto-about-me{
-    margin-left: 0;
+
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    
+    
     text-align: left;
+    padding: 10px;
+    
+    width: 100%;
+    max-width: 700px;
+}
+
+
+/* PROYECTOS MIOS */
+
+#proyectos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+
+
     width: 100%;
 }
 
+img{
+    width: 40px;
+}
+
+
+.proyecto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: white;
+    
+    
+
+    border: thin red solid;
+    border-radius: 10px;
+    
+    max-width: 1000px;
+    width: 100%;
+}
+
+.imagen-proyecto{
+    margin-left: 0;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.texto-proyecto{
+
+}
+
+
+
+/* Habilidades y tecnologias */
+
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+}
 
 #div-herramientas{
     width: 100%;
@@ -212,7 +345,7 @@ h3{
     margin-top: 12px;
     gap: 32px;
 
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 .cada-herramienta{
@@ -238,6 +371,7 @@ h3{
     aspect-ratio: 1;
 }
 
+/* Contacto */
 
 #contacto{
     width: 100%;
@@ -272,54 +406,64 @@ h3{
 
 
 #input-nombre,#input-email{
-    background-color: #000000;
-    margin-top: 10px;
+    color: #112;
+    background-color: #fafafa;
+    margin-top: 20px;
     padding: 10px;
     text-align: left;
     width: 100%;
     max-width: 1100px;
+    box-shadow: 20px 40px 10px #112;
 }
 
 
 #input-consulta,#input-texto{
-    background-color: #000000;
-    margin-top: 10px;
+    color: #112;
+    background-color: #fafafa;
+    margin-top: 20px;
     padding: 10px;
     text-align: left;
     width: 100%;
     max-width: 1100px;
+    box-shadow: 20px 40px 10px #112;
 }
 
 #input-texto{
     height: 20vh;
     overflow: hidden;
+    box-shadow: 20px 40px 10px #112;
 }
 
-
 #enviar{
+    color: black;
     border-radius: 10px;
     width: 150px;
-    background-color: #000000;
+    background-color: aliceblue;
     padding: 6px;
-    margin-top: 15px;
+    margin-top: 45px;
     margin-bottom: 100px;
 }
 
 #enviar:hover{
-    color: #1e2249;
-    background-color: aliceblue;
+    background-color: rgb(220, 220, 220);
     transition: 0.4s;
 }
 
+
+
+/* Foooter */
 
 footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 10vh;
-    background-color: #000000;
+    background-color: #fafafa;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
+
+
+    border: none;
 }
