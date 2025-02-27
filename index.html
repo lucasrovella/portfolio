@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfolio</title>
 </head>
 
 
 <body>
 
-    <nav>
-        <ul>
-            <a href="#about-me">
-                <li>
-                    Acerca de mi
-                </li>
-            </a>
-
-            <a href="#proyectos">
-                <li>
-                    Proyectos
-                </li>
-            </a>
+    <header>
+        <button class="abrir-menu" id="abrir"><i class='bx bx-list-ul' ></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <button class="cerrar-menu" id="cerrar"><i class='bx bx-x'></i></button>
+                <a href="#about-me">
+                    <li>
+                    <i class='bx bx-user'></i>Acerca de mi
+                    </li>
+                </a>
                 
-            <a href="#habilidades">
-                <li>
-                    Habilidades
-                </li>
-            </a>
-
-            <a href="#contactos">
-                <li>
-                    Contacto
-                </li>
-            </a>
-
-            <a>
-                <li>
-                    CV
-                </li>
-            </a>
-
-        </ul>
-    </nav>
+                <a href="#proyectos">
+                    <li>
+                    <i class='bx bx-briefcase'></i>Proyectos
+                    </li>
+                </a>
+                
+                <a href="#habilidades">
+                    <li>
+                        <i class='bx bx-folder-open' ></i>Habilidades
+                    </li>
+                </a>
+                
+                <a href="#contacto">
+                    <li>
+                        <i class='bx bx-envelope'></i>Contacto
+                    </li>
+                </a>
+                
+                <a href="">
+                    <li>
+                        <i class='bx bx-spreadsheet'></i>CV
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
 
     <main>
+
         <section id="presentacion"  name="presentacion">
             
             <h1>Lucas Adrian Rovella</h1>
@@ -53,34 +59,17 @@
 
             <div class="links-redes">
                 <a class="imagen-redes" href="https://www.linkedin.com/in/lucas-adrian-rovella-7057b7130" target="_blank"><img class="redes" id="linkedin-lucas" name="linkedin-lucas" src="./assets/linkedin.svg"></a>
-                
                 <a class="imagen-redes" href="https://github.com/lucasrovella" target="_blank"><img class="redes" id="github-lucas" name="github-lucas" src="./assets/github.svg"></a>             
-
                 <a class="imagen-redes" href="https://wa.me/1160103012/?text=Hola!%20Vengo%20desde%20tu%20portfolio" target="_blank"><img  class="redes" id="wpp-lucas" src="./assets/whatsapp-svgrepo-com.svg"></a>
             </div>
-
-
-                <!-- <h1>
-                    Hola soy Lucas Adrian Rovella
-                </h1>
-                <img src="./imgs/WhatsApp Image 2024-09-04 at 16.06.07.jpeg" alt="pfp-Lucas" name="pfp-Lucas" id="pfp-Lucas" >
-
-                <h2>
-                    Desarrollador Fullstack 
-                </h2> -->
         </section>
 
         <section id="about-me">
+            <div id="div-avion">
+                <img class="imagenes-fondo" src="./imgs/avion.png" id="avion" name="avion">
+            </div>
             
-            <img src="./imgs/nube1.png" id="nube1" name="nube1">
-
-            <img class="imagenes-fondo" src="./imgs/avion.png" id="avion" name="avion">
-            
-            
-
             <h2>Acerca de mi</h2>
-            
-
             <div class="about-me">
 
                 <div id="pfp-about-me">
@@ -90,21 +79,23 @@
                 <div id="texto-about-me">
                     <p> 
                         Soy un desarrollador Full-Stack y Técnico universitario
-                        en programación, con experiencia en el desarrollo de aplicaciones web y
-                        programas realizados con el Modelo Vista Controlador.
+                        en Programación, graduado de la Universidad Tecnológica Nacional
+                        con experiencia en el desarrollo de aplicaciones web y programas por medio del Modelo Vista Controlador.
+
                     </p>
                     <p>
                         Busco mejorar mis habilidades como programador y seguir aprendiendo nuevas tecnologias.
+                        Actualmente me encuentro estudiando React y Nodejs con el objetivo de mejorar mis habilidades en el desarrollo de aplicaciones web
+                        y aprender nuevos métodos de desarrollo.
 
-                        
-                        Actualmente estoy trabajando en proyectos personales y en la búsqueda de empleo en el rubro de la programación.
                     </p>
 
+                    <p>
+                        Actualmente estoy trabajando en proyectos personales que permitan demostrar mis habilidades como desarrollador y poder
+                        colaborar en proyectos de mayor envergadura.
+                    </p>
                 </div>
-
-
             </div>
-
         </section>
 
         <section name="proyectos" id="proyectos">
@@ -114,20 +105,35 @@
             </div>
 
             <h2>Proyectos</h2>
-            
             <p>
                 Algunos de mis proyectos como desarrollador:
             </p>
 
-            <!-- <div class="proyecto">
-
-
-                <div class="texto-proyecto">
-                    <span> Titulo del proyecto</span>
-                    <p> Descripcion del proyecto </p>
+            <div class="div-proyectos">
+                <div class="tarjeta-proyecto">
                     
+                    <div class="recuadro-imagen">
+                        <img class="imagen-proyecto" src="./imgs/hotel-grand-brizo.png" alt="hotel-grand-brizo">
+                    </div>
+
+                    <div class="texto-proyecto">
+                        <h3>Hotel Grand Brizo</h3>
+                        <p>
+                            Sitio web de un hotel ficticio, realizado con HTML, CSS y JavaScript.
+                        </p>
+
+                    </div>
+
+
                 </div>
-            </div> -->
+
+
+
+
+                </div>
+            </div>
+
+
 
 
 
@@ -135,16 +141,12 @@
 
 
 
-
-
         <section name="habilidades" id="habilidades">
             <h2>Tecnologías y herramientas</h2>
-
             <p>
                 Esto son los distintos lenguajes y herramientas que 
                 utilizo a la hora de programar.
             </p>
-
             <ul id="div-herramientas" name="div-herramientas">
                 
                 <li name="caja-html" class="cada-herramienta">
@@ -202,14 +204,16 @@
                     <img name="git" class="herramientas" src="./assets/git.svg" >
                     <span>Git</span>
                 </li>
-
             </ul>
-            
         </section>
+        
+        
+        <div id="div-nubes">
+            <img class="imagenes-fondo" src="./imgs/nube1.png" id="avion" name="avion">
+        </div>
 
         <section name="contacto" id="contacto">
             <h2> Contacto</h2>
-
             <p>
                 Si deseas contactarme en caso de tener alguna duda,
                 o si deseas trabajar conmigo, puedes hacerlo a 
@@ -219,12 +223,10 @@
             <form id="form-contacto" name="form-contacto">
                 
                 <div id="nombre-correo">
-                   <input id="input-nombre" name="input-nombre"  placeholder="Nombre">
+                    <input id="input-nombre" name="input-nombre"  placeholder="Nombre">
                     <input id="input-email" name="input-email" type="email" placeholder="Correo electrónico"> 
+                    
                 </div>
-
-
-                <input id="input-consulta" name="input-consulta" placeholder="Asunto">
 
                 <textarea placeholder="Escribi tu mensaje..." id="input-texto" name="input-texto" autocomplete="off" spellcheck="false" ></textarea>
 
@@ -234,8 +236,6 @@
 
         </section>
 
-        <div id="algo2" name="algo2"> 
-        </div>
 
         <footer>
             <div class="links-redes">
@@ -248,6 +248,8 @@
         </footer>
 
     </main>
+
+    <script src="script.js"> </script>
     
 </body>
 
