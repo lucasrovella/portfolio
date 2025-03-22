@@ -6,7 +6,7 @@
     <link rel="Stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Portfolio</title>
+    <title>Lucas Adrian Rovella - Portfolio</title>
 </head>
 
 
@@ -41,7 +41,7 @@
                     </li>
                 </a>
                 
-                <a target="_blank" href="./Curriculum - Rovella Lucas Adrian - Desarrollador Full Stack (2).pdf">
+                <a target="_blank" href="./Curriculum - Rovella Lucas Adrian.pdf">
                     <li>
                         <i class='bx bx-spreadsheet'></i>CV
                     </li>
@@ -136,10 +136,7 @@
                             </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="div-proyectos">
                 <div class="card">
 
                     <div class="image-box">
@@ -167,6 +164,8 @@
                     </div>
                 </div>
             </div>
+
+
             
         </section>
 
@@ -251,15 +250,16 @@
                 través de este formulario.
             </p>
             
-            <form id="form-contacto" name="form-contacto">
+            <span id="mail-enviado"></span>
+            <form id="form-contacto" name="form-contacto" action="contacto.php" method="post">
                 
                 <div id="nombre-correo">
-                    <input id="input-nombre" name="input-nombre"  placeholder="Nombre">
-                    <input id="input-email" name="input-email" type="email" placeholder="Correo electrónico"> 
+                    <input id="input-nombre" name="input-nombre"  placeholder="Nombre" required="required">
+                    <input id="input-email" name="input-email" type="email" placeholder="Correo electrónico" required="required" > 
                     
                 </div>
 
-                <textarea placeholder="Escribi tu mensaje..." id="input-texto" name="input-texto" autocomplete="off" spellcheck="false" ></textarea>
+                <textarea placeholder="Escribi tu mensaje..." id="input-texto" name="input-texto" required="required" autocomplete="off" spellcheck="false" ></textarea>
 
                 <button type="submit" id="enviar" name="enviar" >Enviar</button>
 
