@@ -11,6 +11,8 @@
 
 html,body{
     width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #000033;
 }
 
 header{
